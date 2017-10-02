@@ -24,7 +24,11 @@ data sets too large for memory is as seamless as in Matlab. Code documentation
 and readability should be a first priority to enable easy future modification
 of the library. The use of global variables to store state should be avoided
 and that information should instead be encapsulated in local objects (what if
-I want to work with more than one grid at once?).
+I want to work with more than one grid at once?). Code should be compatible
+with both Python 2 and Python 3; we want to be future-ready, but some systems
+we work on may not have a Python 3 distribution new enough to support all
+dependencies (ICES desktops do not have a Python 3 new enough to support 
+NumPy).
 
 License
 =======
